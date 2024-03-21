@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Zen+Tokyo+Zoo&display=swap');
 
 * {
     margin: 0;
@@ -92,7 +93,7 @@ h2 {
     position: relative;
     background-color: #e1e9f6;
     border-radius: 2px;
-  }
+}
 
 .range-selected {
     height: 100%;
@@ -121,8 +122,10 @@ h2 {
 }
 .header {
     padding: 30px;
-    text-align: center;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main_car {
@@ -201,7 +204,7 @@ img {
     width: 15%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 5px;
     appearance: none;
     background-color: white;
@@ -267,4 +270,22 @@ img {
 .car_info_text {
     font-size: 20px;
     padding-left: 10px;
+}
+
+.site_description_text {
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.site_description {
+    font-family: "Zen Tokyo Zoo", system-ui;
+    font-size: 40px;
+}
+
+.icon_search {
+    width: 8%;
 }
