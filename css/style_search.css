@@ -119,6 +119,9 @@ img {
 
 .info_market {
     display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .range-price {
@@ -133,4 +136,20 @@ img {
 .line_indentation {
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.map {
+    height: 450px;
+    width: 80%;
+}
+
+.info_market_contact {
+    margin-left: 10px;
+    color: white;
+    font-size: 20px
+}
+
+.text_bold {
+    font-weight: bold;
+    font-size: 25px;
 }
