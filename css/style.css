@@ -185,8 +185,9 @@ img {
     clear: both;
 }
 
-.broke {
+.status {
     display: flex;
+    padding-bottom: 20px;
 }
 
 .box_main {
@@ -237,7 +238,7 @@ img {
 
 .line_indentation {
     margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .map {
