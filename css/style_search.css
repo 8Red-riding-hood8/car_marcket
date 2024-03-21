@@ -25,13 +25,17 @@ form {
     color: white;
   }
 
-.main {
+.main_car {
     display: flex;
-    width: 100%;
+}
+
+.main_car_head {
+    text-align: center;
 }
 
 .item {
     border: thick double white;
+    width: 50%;
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 5px;
@@ -39,7 +43,7 @@ form {
 }
 
 .img_car {
-    width: 90%;
+    width: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -47,18 +51,26 @@ form {
     margin-bottom: 10px;
 }
 
-footer {
-    padding: 30px;
+.social_media {
     text-align: center;
     color: white;
     display: flex;
     justify-content: space-around;
     width: 100%;
+    margin-top: 10px;
 }
-a {
+
+.social_media_item {
     color: white;
+    font-size: 30px;
+    border: 5px solid;
+    width: 100%;
+    display: float;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-a:hover {
+
+.social_media_item:hover {
     color: aqua;
 }
 
