@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/1920x1080_q4_2023_5625.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item_login {
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    border: 1px solid #afafaf;
+}
+
+.left {
+    background-color: #ffffff;
+    opacity: 0.8;
+    width: 20%;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px 10px;
+}
+
+input.login:hover {
+    background-color: #05e693;
+
+}
+
+.login {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    margin-bottom: 450px; 
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #04AA6D;
+    padding-top: 200px;
+}
+.item_login,
+.login {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.right {
+    float: right; 
+}
+
+.head_market {
+    font-size: 100px;
+    color: #04AA6D;
+}
+
+
+
+.icon {
+    width: 30%;
+    float: right;
+}
+
+.head_market,
+.icon {
+    margin-right: 40px;
+}
+
+.clear {
+    clear: both;
+}
+
+.range-slider {
+    height: 5px;
+    position: relative;
+    background-color: #e1e9f6;
+    border-radius: 2px;
+  }
+  .range-selected {
+    height: 100%;
+    left: 30%;
+    right: 30%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #1b53c0;
+  }

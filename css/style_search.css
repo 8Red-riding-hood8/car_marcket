@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #04AA6D;
+    color: white;
+  }
+
+.main {
+    display: flex;
+    width: 100%;
+}
+
+.item {
+    border: thick double white;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.img_car {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #04AA6D;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+a {
+    color: white;
+}
+a:hover {
+    color: aqua;
+}
+
+form {
+    background-color: #04AA6D;
+}
+ 
+img {
+    width: 100%;
+}
+
+.broke {
+    display: flex;
+}
+

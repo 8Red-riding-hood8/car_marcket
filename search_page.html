@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_search.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>With a <b>flexible</b> layout.</p>
+      </div>
+      <img src="images/Audi-Report_MST_03.jpg" alt="">
+          <form action="https://fom.in.ua/echo" class="form">
+              <select name="select1">
+                  <option value="" disabled selected>Тип кузова</option>
+                  <option value="value1">Седан</option>
+                  <option value="value2">Універсал</option>
+                  <option value="value3">Лімузин</option>
+                  <option value="value3">Пікап</option>
+                  <option value="value3">Фургон</option>
+              </select>
+             
+              <select name="select1">
+                  <option value="" disabled selected>Марка авто</option>
+                  <option value="value1">BMW</option>
+                  <option value="value2">Mercedes-Benz</option>
+                  <option value="value3">Audi</option>
+                  <option value="value2">Ford</option>
+                  <option value="value3">Toyota</option>
+                  <option value="value2">Honda</option>
+                  <option value="value3">Volkswagen</option>
+                  <option value="value2">Nissan</option>
+                  <option value="value3">Hyundai</option>
+                  <option value="value3">Chevrolet</option>
+              </select>
+              
+              <select name="select1">
+                  <option value="" disabled selected>Країна виробник</option>
+                  <option value="value1">Німеччина</option>
+                  <option value="value2">США</option>
+                  <option value="value3">Японія</option>
+                  <option value="value3">Південна Корея</option>
+              </select>
+
+              <select name="select1">
+                <option value="" disabled selected>Тип палива</option>
+                <option value="value1">Бензин</option>
+                <option value="value2">Дизельне паливо</option>
+                <option value="value3">Електрикаі</option>
+                <option value="value2">Газ</option>
+                <option value="value3">Гібридні системи</option>
+            </select>
+           
+            <select name="select1">
+                <option value="" disabled selected>Тип коробки передач</option>
+                <option value="value1">Механічна коробка передач</option>
+                <option value="value2">Автоматична коробка передач</option>
+                <option value="value3">Роботизована коробка передач</option>
+                <option value="value3">Полуавтоматична коробка передач</option>
+            </select><br>
+            
+            <input type="color" name="color" value="#ffffff">
+              <br />
+              <div class="range">
+                  <div class="range-slider">
+                      <span class="range-selected"></span>
+                  </div>
+                  <div class="range-input">
+                      <input type="range" class="min" min="0" max="1500000" value="50000" step="10">
+                      <input type="range" class="max" min="1500000" max="3000000" value="2000000" step="10">
+                  </div>
+                  <div class="range-price">      
+                      <label for="min">Min</label>
+                      <input type="number" name="min" value="50000">
+                      <label for="max">Max</label>
+                      <input type="number" name="max" value="2000000">
+                  </div>
+              
+              <script>
+                  const minRangeInput = document.querySelector('.min');
+                  const maxRangeInput = document.querySelector('.max');
+                  const minNumberInput = document.querySelector('input[name="min"]');
+                  const maxNumberInput = document.querySelector('input[name="max"]');
+                  minRangeInput.addEventListener('input', function() {
+                      minNumberInput.value = minRangeInput.value;
+                  });
+                  maxRangeInput.addEventListener('input', function() {
+                      maxNumberInput.value = maxRangeInput.value;
+                  });
+                  minNumberInput.addEventListener('input', function() {
+                      minRangeInput.value = minNumberInput.value;
+                  });
+                  maxNumberInput.addEventListener('input', function() {
+                      maxRangeInput.value = maxNumberInput.value;
+                  });
+              </script>
+              <!-- Встановити як обовязкове поле при заповненні -->
+              <p>Рік</p>
+              <input type="number" min="1991" max="2024" step="1"/><br>
+              <div class="broke">
+                  <div>
+                    <p>Стан</p>
+                      <input type="checkbox" id="car_broke" name="car_broke" value="car_broke">
+                      <label for="car_broke">car is broke</label><br>
+                      <input type="checkbox" id="car_broke" name="car_broke" value="car_broke">
+                      <label for="car_broke">car is broke</label><br>
+                      <input type="checkbox" id="car_broke" name="car_broke" value="car_broke">
+                      <label for="car_broke">car is broke</label><br>
+                      <input type="checkbox" id="car_broke" name="car_broke" value="car_broke">
+                      <label for="car_broke">car is broke</label>
+                  </div>
+                  <div>
+                    <p>Комфорт</p>
+                    <input type="checkbox" id="car_broke" name="car_broke" value="car_broke">
+                    <label for="car_broke">car is broke</label><br>
+                    <input type="checkbox" id="car_broke" name="car_broke" value="car_broke">
+                    <label for="car_broke">car is broke</label><br>
+                    <input type="checkbox" id="car_broke" name="car_broke" value="car_broke">
+                    <label for="car_broke">car is broke</label><br>
+                    <input type="checkbox" id="car_broke" name="car_broke" value="car_broke">
+                    <label for="car_broke">car is broke</label>
+                </div>
+              </div>
+              </form>
+
+
+
+        <div class="main">
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolor optio natus quia eos corporis alias minus quisquam iusto esse recusandae eveniet ducimus, quibusdam tenetur numquam ullam. Reprehenderit, officiis illum!</p>
+                <img src="images/Audi-Report_MST_03.jpg" alt="" class="img_car">
+            </div>
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolor optio natus quia eos corporis alias minus quisquam iusto esse recusandae eveniet ducimus, quibusdam tenetur numquam ullam. Reprehenderit, officiis illum!</p>
+                <img src="images/Audi-Report_MST_03.jpg" alt="" class="img_car">
+            </div>
+        </div>
+        <div class="main">
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolor optio natus quia eos corporis alias minus quisquam iusto esse recusandae eveniet ducimus, quibusdam tenetur numquam ullam. Reprehenderit, officiis illum!</p>
+                <img src="images/Audi-Report_MST_03.jpg" alt="" class="img_car">
+            </div>
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolor optio natus quia eos corporis alias minus quisquam iusto esse recusandae eveniet ducimus, quibusdam tenetur numquam ullam. Reprehenderit, officiis illum!</p>
+                <img src="images/Audi-Report_MST_03.jpg" alt="" class="img_car">
+            </div>
+        </div>
+        <div class="main">
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolor optio natus quia eos corporis alias minus quisquam iusto esse recusandae eveniet ducimus, quibusdam tenetur numquam ullam. Reprehenderit, officiis illum!</p>
+                <img src="images/Audi-Report_MST_03.jpg" alt="" class="img_car">
+            </div>
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolor optio natus quia eos corporis alias minus quisquam iusto esse recusandae eveniet ducimus, quibusdam tenetur numquam ullam. Reprehenderit, officiis illum!</p>
+                <img src="images/Audi-Report_MST_03.jpg" alt="" class="img_car">
+            </div>
+        </div>
+        <footer>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </footer>
+</body>
+</html>
