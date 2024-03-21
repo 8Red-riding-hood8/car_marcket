@@ -25,14 +25,11 @@ body {
     opacity: 0.8;
     width: 20%;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
     border-radius: 10px 10px;
+    padding-bottom: 250px;
 }
 
-input.login:hover {
-    background-color: #05e693;
-
-}
 
 .login {
     background-color: #04AA6D;
@@ -42,7 +39,16 @@ input.login:hover {
     border: none;
     cursor: pointer;
     width: 40%;
-    margin-bottom: 450px; 
+}
+
+.login:hover {
+    background-color: #05e693;
+}
+
+
+.registry {
+    text-align: center;
+    text-decoration:none;
 }
 
 h2 {
