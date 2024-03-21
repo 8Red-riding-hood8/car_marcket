@@ -4,15 +4,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-
+    background: #04AA6D;
 }
-
+.name_market {
+    color: #f7d3a5;
+    font-size: 100px;
+}
+form {
+    background-color: #f7d3a5;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .header {
     padding: 30px;
     text-align: center;
-    background: #04AA6D;
     color: white;
   }
 
@@ -41,7 +50,6 @@ body {
 footer {
     padding: 30px;
     text-align: center;
-    background: #04AA6D;
     color: white;
     display: flex;
     justify-content: space-around;
@@ -54,15 +62,63 @@ a:hover {
     color: aqua;
 }
 
-form {
-    background-color: #04AA6D;
-}
- 
 img {
     width: 100%;
+    float: inline-start;
+}
+
+.clear_img {
+    clear: both;
 }
 
 .broke {
     display: flex;
 }
 
+.box_main {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.box {
+    width: 15%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; /* Remove default arrow */
+    background-color: white;
+    opacity: 0.9;
+    border: none;
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+}
+
+.box option {
+    font-size: 14px;
+}
+
+.item_color {
+    display: flex;
+    margin-top: 10px;
+}
+
+.info_market {
+    display: flex;
+}
+
+.range-price {
+    display: flex;
+}
+
+.search_panel_text {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.line_indentation {
+    margin-right: 10px;
+    margin-left: 10px;
+}
