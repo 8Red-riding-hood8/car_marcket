@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <body>
-        <div class="right">
+    <body class="fon_car">
+        <div class="right_pannel_icon">
         <div class="name">
             <h1 class="head_market">
                 AutoMarket
             </h1>
-            <img src="images/icon.png" alt="" class="icon">
+            <img src="images/icon.png" alt="icon" class="icon">
             </div>
         </div>
-        <div class="left">
+        <div class="left_pannel">
             <form action="https://fom.in.ua/echo" class="form">
-                <h2>Вхід</h2>
-                    <input type="email" name="email" formcontrolname="email" autocomplete="email" placeholder="Пошта" class="item_login">
-                    <input type="password" name="password" formcontrolname="password" autocomplete="password" placeholder="Пароль" class="item_login">
+                <h2 class="head_green">Вхід</h2>
+                    <input type="email" name="email" formcontrolname="email" autocomplete="email" placeholder="Пошта" class="item_login" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    <input type="password" name="password" formcontrolname="password" autocomplete="password" placeholder="Пароль" class="item_login" required>
                     <a href="#" style="float:right;margin-right: 50px;">Забули пароль?</a>
                     <br>
                     <input type="submit" name="submit1" value="Вхід" class="login"/>
                 </form>
-                <a href="registry_page.html" class="login registry"> Реєстрація</a>
+                <a href="registry_page.html" class="login registry">Реєстрація</a>
            </div>
     </body>
 </body>

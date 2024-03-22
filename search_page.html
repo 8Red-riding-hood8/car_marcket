@@ -3,262 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body class="search_body">
-    <div class="header">
-        <h1 class="name_market">AutoMarket</h1>
-        <img src="images/icon_search.png" alt="icon_search" class="icon_search">
-      </div>
-      <img src="images/Audi-Report_MST_03.jpg" alt="">
-      <div class="clear_img"></div>
-      <p class="site_description_text">Ласкаво просимо на <span class="site_description">AutoMarket</span> - ваш персональний портал для покупки автомобілів! Ми створили цей сайт з однією метою - забезпечити вам зручний та надійний інструмент для придбання ідеального авто. Наша команда працює над тим, щоб зробити процес покупки автомобіля легким, захоплюючим та безпечним.</p>
-          <form action="https://fom.in.ua/echo" class="panel">
-            <div class="search_panel"></div>
-            <div class="box_main">
-              <select name="select1" class="box">
-                  <option value="" disabled selected>Тип кузова</option>
-                  <option value="value1">Седан</option>
-                  <option value="value2">Універсал</option>
-                  <option value="value3">Лімузин</option>
-                  <option value="value3">Пікап</option>
-                  <option value="value3">Фургон</option>
-              </select>
-              <select name="select1" class="box">
-                  <option value="" disabled selected>Марка авто</option>
-                  <option value="value1">BMW</option>
-                  <option value="value2">Mercedes-Benz</option>
-                  <option value="value3">Audi</option>
-                  <option value="value2">Ford</option>
-                  <option value="value3">Toyota</option>
-                  <option value="value2">Honda</option>
-                  <option value="value3">Volkswagen</option>
-                  <option value="value2">Nissan</option>
-                  <option value="value3">Hyundai</option>
-                  <option value="value3">Chevrolet</option>
-              </select>
-              <select name="select1" class="box">
-                  <option value="" disabled selected>Країна виробник</option>
-                  <option value="value1">Німеччина</option>
-                  <option value="value2">США</option>
-                  <option value="value3">Японія</option>
-                  <option value="value3">Південна Корея</option>
-              </select>
-              <select name="select1"class="box">
-                <option value="" disabled selected>Тип палива</option>
-                <option value="value1">Бензин</option>
-                <option value="value2">Дизельне паливо</option>
-                <option value="value3">Електрикаі</option>
-                <option value="value2">Газ</option>
-                <option value="value3">Гібридні системи</option>
-            </select>
-            <select name="select1" class="box">
-                <option value="" disabled selected>Тип коробки передач</option>
-                <option value="value1">Механічна коробка передач</option>
-                <option value="value2">Автоматична коробка передач</option>
-                <option value="value3">Роботизована коробка передач</option>
-                <option value="value3">Полуавтоматична коробка передач</option>
-            </select>
-                  <input type="number" min="1991" max="2024" step="1" class="box"  placeholder="Year"/>
+<body>
+    <div class="search_body">
+        <div class="header">
+            <h1 class="name_market">AutoMarket</h1>
+            <img src="images/icon_search.png" alt="icon_search" class="icon_search">
         </div>
-        <div class="range">
-            <div class="range-price search_panel_text">
-                <label for="min" class="line_indentation text_bold">Мінімальна ціна</label>
-                <input type="number" name="min" value="50000" class="box">
-                <p class="line_indentation">грн</p>
-                <input type="range" class="min" min="0" max="1500000" value="50000" step="10">
+        <img src="images/Audi-Report_MST_03.jpg" alt="main_img_line" class="main_img_line">
+          <p class="site_description_text">Ласкаво просимо на <span class="site_description">AutoMarket</span> - ваш персональний портал для покупки автомобілів! Ми створили цей сайт з однією метою - забезпечити вам зручний та надійний інструмент для придбання ідеального авто. Наша команда працює над тим, щоб зробити процес покупки автомобіля легким, захоплюючим та безпечним.</p>
+              <form action="https://fom.in.ua/echo" class="panel">
+                <div class="search_panel"></div>
+                <div class="box_main">
+                  <select name="type_kuzov" class="box">
+                      <option value="" disabled selected>Тип кузова</option>
+                      <option value="sedan">Седан</option>
+                      <option value="universal">Універсал</option>
+                      <option value="limousine">Лімузин</option>
+                      <option value="pickup">Пікап</option>
+                      <option value="van">Фургон</option>
+                  </select>
+                  <select name="car_brand" class="box">
+                      <option value="" disabled selected>Марка авто</option>
+                      <option value="Renault">Renault</option>
+                      <option value="Mercedes-Benz">Mercedes-Benz</option>
+                      <option value="Audi">Audi</option>
+                      <option value="Ford">Ford</option>
+                      <option value="Toyota">Toyota</option>
+                      <option value="Honda">Honda</option>
+                      <option value="Volkswagen">Volkswagen</option>
+                      <option value="Nissan">Nissan</option>
+                      <option value="Hyundai">Hyundai</option>
+                      <option value="Chevrolet">Chevrolet</option>
+                  </select>
+                  <select name="producing_country" class="box">
+                      <option value="" disabled selected>Країна виробник</option>
+                      <option value="Germany">Німеччина</option>
+                      <option value="USA">США</option>
+                      <option value="Japan">Японія</option>
+                      <option value="South_Korea">Південна Корея</option>
+                      <option value="France">Франція</option>
+                  </select>
+                  <select name="fuel_type"class="box">
+                    <option value="" disabled selected>Тип палива</option>
+                    <option value="gasoline">Бензин</option>
+                    <option value="diesel_fuel">Дизельне паливо</option>
+                    <option value="electricity">Електрика</option>
+                    <option value="gas">Газ</option>
+                    <option value="hybrid_system">Гібридна система</option>
+                </select>
+                <select name="type_gearbox" class="box">
+                    <option value="" disabled selected>Тип коробки передач</option>
+                    <option value="mechanical">Механічна коробка передач</option>
+                    <option value="automatic">Автоматична коробка передач</option>
+                    <option value="robotic">Роботизована коробка передач</option>
+                    <option value="semi-automatic">Напівавтоматична коробка передач</option>
+                </select>
+                      <input type="number" name="year"  min="1991" max="2024" step="1" class="box"  placeholder="Year"/>
             </div>
-            <div class="range-price search_panel_text">
-                <label for="max" class="line_indentation text_bold">Максимальна ціна</label>
-                <input type="number" name="max" value="2000000" class="box">
-                <p class="line_indentation">грн</p>
-                <input type="range" class="max" min="1500000" max="3000000" value="2000000" step="10">
-            </div>
-            <div class="item_color search_panel_text">
-                <p class="line_indentation text_bold">Колір</p>
-                <input type="color" name="color" value="#ffffff">
-            </div>
-        </div>
-              <script>
-                  const minRangeInput = document.querySelector('.min');
-                  const maxRangeInput = document.querySelector('.max');
-                  const minNumberInput = document.querySelector('input[name="min"]');
-                  const maxNumberInput = document.querySelector('input[name="max"]');
-                  minRangeInput.addEventListener('input', function() {
-                      minNumberInput.value = minRangeInput.value;
-                  });
-                  maxRangeInput.addEventListener('input', function() {
-                      maxNumberInput.value = maxRangeInput.value;
-                  });
-                  minNumberInput.addEventListener('input', function() {
-                      minRangeInput.value = minNumberInput.value;
-                  });
-                  maxNumberInput.addEventListener('input', function() {
-                      maxRangeInput.value = maxNumberInput.value;
-                  });
-              </script>
-              <!-- Встановити як обовязкове поле при заповненні -->
-              <div class="status">
-                  <div class="search_panel_text line_indentation">
+            <div class="place_search_buttom">
+                <div class="status"><div class="search_panel_text line_indentation">
                     <p class="text_bold">Стан</p>
-                      <input type="checkbox" id="car_broke" name="car_broke" value="car_broke">
+                      <input type="checkbox" id="car_broke" name="stan" value="car_broke">
                       <label for="car_broke">Бита</label><br>
-                      <input type="checkbox" id="car_broke" name="car_broke" value="car_broke">
-                      <label for="car_broke"> У кредит</label><br>
-                      <input type="checkbox" id="car_broke" name="car_broke" value="car_broke">
-                      <label for="car_broke">Нерозмитнена</label><br>
-                      <input type="checkbox" id="car_broke" name="car_broke" value="car_broke">
-                      <label for="car_broke">Перевірений сервісом</label>
-                  </div>
-                  <div class="search_panel_text line_indentation">
+                      <input type="checkbox" id="credit" name="stan" value="credit">
+                      <label for="credit"> У кредит</label><br>
+                      <input type="checkbox" id="uncleared" name="stan" value="uncleared">
+                      <label for="uncleared">Нерозмитнена</label><br>
+                      <input type="checkbox" id="checked_service" name="stan" value="checked_service">
+                      <label for="checked_service">Перевірений сервісом</label>
+                    </div>
+                    <div class="search_panel_text line_indentation">
                     <p class="text_bold">Комфорт</p>
-                    <input type="checkbox" id="car_broke" name="car_broke" value="car_broke">
-                    <label for="car_broke">Люк</label><br>
-                    <input type="checkbox" id="car_broke" name="car_broke" value="car_broke">
-                    <label for="car_broke">Шкіряний салон</label><br>
-                    <input type="checkbox" id="car_broke" name="car_broke" value="car_broke">
-                    <label for="car_broke">Система навігації</label><br>
-                    <input type="checkbox" id="car_broke" name="car_broke" value="car_broke">
-                    <label for="car_broke">Система безпеки</label>
+                    <input type="checkbox" id="luke" name="comfort" value="luke">
+                    <label for="luke">Люк</label><br>
+                    <input type="checkbox" id="leather_salon" name="comfort" value="leather_salon">
+                    <label for="leather_salon">Шкіряний салон</label><br>
+                    <input type="checkbox" id="navigation_system" name="comfort" value="navigation_system">
+                    <label for="navigation_system">Система навігації</label><br>
+                    <input type="checkbox" id="security_system" name="comfort" value="security_system">
+                    <label for="security_system">Система безпеки</label>
                 </div>
-              </div>
-    </form>
-        <div class="main_car">
-            <div class="item">
-                <p class="main_car_head">Renault</p>
-                <img src="images/renault.jpg" alt="renault" class="img_car">
-                <div class="car_info_text">
-                    <p>Марка авто: Chevrolet</p>
-                    <p>Крахна виробник: США</p>
-                    <p>Тип палива: Бензин</p>
-                    <p>Тип коробки передач: Механічна коробка передач</p>
-                    <p>Рік: 2019</p>
-                    <p>Тип кузова: Седан</p>
-                    <p>Стан: Нерозмитнена</p>
-                    <p>Комфорт: Шкіряний салон</p>
-                    <p>Колір:
-                        <input type="color" value="#d42013">
-                    </p>
+            <div class="range">
+                <div class="range-price search_panel_text">
+                    <label for="min" class="line_indentation text_bold">Мінімальна ціна</label>
+                    <input type="number" readonly name="min" value="50000" class="box">
+                    <p class="line_indentation">грн</p>
+                    <input type="range" class="min" min="0" max="1500000" value="50000" step="10">
                 </div>
-                <p class="main_car_head">1200000 грн</p>
-                <div class="clear"></div>
+                <div class="range-price search_panel_text">
+                    <label for="max" class="line_indentation text_bold">Максимальна ціна</label>
+                    <input type="number" readonly name="max" value="2000000" class="box">
+                    <p class="line_indentation">грн</p>
+                    <input type="range" class="max" min="1500000" max="3000000" value="2000000" step="10">
+                </div>
+                <script src="js/range.js"></script>
+                <div class="item_color search_panel_text">
+                    <p class="line_indentation text_bold">Колір</p>
+                    <input type="color" name="color" value="#ffffff">
+                </div>
             </div>
-            <div class="item">
-                <p class="main_car_head">Mercedes</p>
-                <img src="images/mercedes.jpeg" alt="mercedes" class="img_car">
-                <div class="car_info_text">
-                    <p>Марка авто: Chevrolet</p>
-                    <p>Крахна виробник: США</p>
-                    <p>Тип палива: Бензин</p>
-                    <p>Тип коробки передач: Механічна коробка передач</p>
-                    <p>Рік: 2019</p>
-                    <p>Тип кузова: Седан</p>
-                    <p>Стан: Нерозмитнена</p>
-                    <p>Комфорт: Шкіряний салон</p>
-                    <p>Колір:
-                        <input type="color" value="#d42013">
-                    </p>
+                    </div>
                 </div>
-                <p class="price_car_text">1200000 грн</p>
-                <div class="clear"></div>
+                <div class="sr_button">
+                    <input type="submit" name="submit" value="Пошук" class="sr_button_item text_bold ">
+                    <input type="reset" value="Скинути" class="sr_button_item text_bold">
+                </div>
+        </form>
+            <div class="main_car">
+                <div class="item">
+                    <p class="main_car_head">Renault</p>
+                    <img src="images/renault.jpg" alt="renault" class="img_car">
+                    <div class="car_info_text">
+                        <p>Марка авто: Renault</p>
+                        <p>Країна виробник: США</p>
+                        <p>Тип палива: Бензин</p>
+                        <p>Тип коробки передач: Механічна коробка передач</p>
+                        <p>Рік: 2019</p>
+                        <p>Тип кузова: Седан</p>
+                        <p>Стан: Нерозмитнена</p>
+                        <p>Комфорт: Шкіряний салон</p>
+                        <p>Колір:
+                            <input type="color" value="#d42013">
+                        </p>
+                    </div>
+                    <p class="price_car_text">1200000 грн</p>
+                </div>
+                <div class="item">
+                    <p class="main_car_head">Mercedes</p>
+                    <img src="images/mercedes.jpeg" alt="mercedes" class="img_car">
+                    <div class="car_info_text">
+                        <p>Марка авто: Mercedes</p>
+                        <p>Країна виробник: Німеччина</p>
+                        <p>Тип палива: Бензин</p>
+                        <p>Тип коробки передач: Механічна коробка передач</p>
+                        <p>Рік: 2016</p>
+                        <p>Тип кузова: Універсал</p>
+                        <p>Стан: Нерозмитнена</p>
+                        <p>Комфорт: Шкіряний салон</p>
+                        <p>Колір:
+                            <input type="color" value="#d42013">
+                        </p>
+                    </div>
+                    <p class="price_car_text">1200000 грн</p>
+                </div>
             </div>
+            <div class="main_car">
+                <div class="item">
+                    <p class="main_car_head">Bugatti Veyron</p>
+                    <img src="images/limousine.jpg" alt="limousine" class="img_car">
+                    <div class="car_info_text">
+                        <p>Марка авто: Bugatti Veyron</p>
+                        <p>Країна виробник: Франція</p>
+                        <p>Тип палива: Бензин</p>
+                        <p>Тип коробки передач: Автоматична коробка передач</p>
+                        <p>Рік: 2021</p>
+                        <p>Тип кузова: Лімузин</p>
+                        <p>Стан: У кредит</p>
+                        <p>Комфорт: Люк</p>
+                        <p>Колір:
+                            <input type="color" value="#fffff">
+                        </p>
+                    </div>
+                    <p class="price_car_text">1200000 грн</p>
+                </div>
+                <div class="item">
+                    <p class="main_car_head">Chevrolet</p>
+                    <img src="images/pickup.jpeg" alt="pickup" class="img_car">
+                    <div class="car_info_text">
+                        <p>Марка авто: Chevrolet</p>
+                        <p>Країна виробник: США</p>
+                        <p>Тип палива: Дизельне паливо</p>
+                        <p>Тип коробки передач: Автоматична коробка передач</p>
+                        <p>Рік: 2021</p>
+                        <p>Тип кузова: Пікап</p>
+                        <p>Стан: Нерозмитнена</p>
+                        <p>Комфорт: Шкіряний салон, Система безпеки</p>
+                        <p>Колір:
+                            <input type="color" value="#fffff">
+                        </p>
+                    </div>
+                    <p class="price_car_text">1200000 грн</p>
+                </div>
+            </div>
+            <div class="main_car">
+                <div class="item">
+                    <p class="main_car_head">Volkswagen</p>
+                    <img src="images/van.jpg" alt="van" class="img_car">
+                    <div class="car_info_text">
+                        <p>Марка авто: Volkswagen</p>
+                        <p>Країна виробник: Німеччина</p>
+                        <p>Тип палива: Бензин</p>
+                        <p>Тип коробки передач: Механічна коробка передач</p>
+                        <p>Рік: 2017</p>
+                        <p>Тип кузова: Фургон</p>
+                        <p>Стан: Нерозмитнена</p>
+                        <p>Комфорт: Шкіряний салон</p>
+                        <p>Колір:
+                            <input type="color" value="#f7f2f2">
+                        </p>
+                    </div>
+                    <p class="price_car_text">1200000 грн</p>
+                    <div class="clear"></div>
+                </div>
+                <div class="item">
+                    <p class="main_car_head">Audi</p>
+                    <img src="images/audi.jpg" alt="audi" class="img_car">
+                    <div class="car_info_text">
+                        <p>Марка авто: Audi</p>
+                        <p>Країна виробник: Німеччина</p>
+                        <p>Тип палива: Бензин</p>
+                        <p>Тип коробки передач: Механічна коробка передач</p>
+                        <p>Рік: 2019</p>
+                        <p>Тип кузова: Седан</p>
+                        <p>Стан: Перевірений сервісом</p>
+                        <p>Комфорт: Шкіряний салон, Система навігації</p>
+                        <p>Колір:
+                            <input type="color" value="#fffff">
+                        </p>
+                    </div>
+                    <p class="price_car_text">1200000 грн</p>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <section class="info_market">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4272.7825154522525!2d30.519978176526603!3d50.44833325982981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf7cd339d561%3A0x93c2ee58a300f23f!2sLET%20BUY%20CAR!5e0!3m2!1sen!2sua!4v1711018411003!5m2!1sen!2sua" class="map"></iframe>
+                 <div class="info_market_contact">
+                     <p class="text_bold">Адреса</p>
+                     <p>Maidan Nezalezhnosti, 2, Kyiv, 02000</p>
+                     <p class="text_bold">Контакти</p>
+                     <p>+380123456789</p>
+                     <p>auto.market@gmail.com</p>
+                 </div>
+            </section>
+            <footer  class="pages_auth">
+                <a href="login_page.html" class="pages_auth_item">Вхід</a>
+                <a href="registry_page.html" class="pages_auth_item">Реєстрація</a>
+            </footer>
         </div>
-        <div class="main_car">
-            <div class="item">
-                <p class="main_car_head">Limousine</p>
-                <img src="images/limousine.jpg" alt="limousine" class="img_car">
-                <div class="car_info_text">
-                    <p>Марка авто: Chevrolet</p>
-                    <p>Крахна виробник: США</p>
-                    <p>Тип палива: Бензин</p>
-                    <p>Тип коробки передач: Механічна коробка передач</p>
-                    <p>Рік: 2019</p>
-                    <p>Тип кузова: Седан</p>
-                    <p>Стан: Нерозмитнена</p>
-                    <p>Комфорт: Шкіряний салон</p>
-                    <p>Колір:
-                        <input type="color" value="#d42013">
-                    </p>
-                </div>
-                <p class="price_car_text">1200000 грн</p>
-                <div class="clear"></div>
-            </div>
-            <div class="item">
-                <p class="main_car_head">Pickup</p>
-                <img src="images/pickup.jpeg" alt="pickup" class="img_car">
-                <div class="car_info_text">
-                    <p>Марка авто: Chevrolet</p>
-                    <p>Крахна виробник: США</p>
-                    <p>Тип палива: Бензин</p>
-                    <p>Тип коробки передач: Механічна коробка передач</p>
-                    <p>Рік: 2019</p>
-                    <p>Тип кузова: Седан</p>
-                    <p>Стан: Нерозмитнена</p>
-                    <p>Комфорт: Шкіряний салон</p>
-                    <p>Колір:
-                        <input type="color" value="#d42013">
-                    </p>
-                </div>
-                <p class="price_car_text">1200000 грн</p>
-                <div class="clear"></div>
-            </div>
-        </div>
-        <div class="main_car">
-            <div class="item">
-                <p class="main_car_head">Volkswagen</p>
-                <img src="images/van.jpg" alt="van" class="img_car">
-                <div class="car_info_text">
-                    <p>Марка авто: Chevrolet</p>
-                    <p>Крахна виробник: США</p>
-                    <p>Тип палива: Бензин</p>
-                    <p>Тип коробки передач: Механічна коробка передач</p>
-                    <p>Рік: 2019</p>
-                    <p>Тип кузова: Седан</p>
-                    <p>Стан: Нерозмитнена</p>
-                    <p>Комфорт: Шкіряний салон</p>
-                    <p>Колір:
-                        <input type="color" value="#d42013">
-                    </p>
-                </div>
-                <p class="price_car_text">1200000 грн</p>
-                <div class="clear"></div>
-            </div>
-            <div class="item">
-                <p class="main_car_head">Audi</p>
-                <img src="images/audi.jpg" alt="audi" class="img_car">
-                <div class="car_info_text">
-                    <p>Марка авто: Chevrolet</p>
-                    <p>Крахна виробник: США</p>
-                    <p>Тип палива: Бензин</p>
-                    <p>Тип коробки передач: Механічна коробка передач</p>
-                    <p>Рік: 2019</p>
-                    <p>Тип кузова: Седан</p>
-                    <p>Стан: Нерозмитнена</p>
-                    <p>Комфорт: Шкіряний салон</p>
-                    <p>Колір:
-                        <input type="color" value="#d42013">
-                    </p>
-                </div>
-                <p class="price_car_text">1200000 грн</p>
-                <div class="clear"></div>
-            </div>
-        </div>
-        <section class="info_market">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4272.7825154522525!2d30.519978176526603!3d50.44833325982981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf7cd339d561%3A0x93c2ee58a300f23f!2sLET%20BUY%20CAR!5e0!3m2!1sen!2sua!4v1711018411003!5m2!1sen!2sua" class="map"></iframe>
-             <div class="info_market_contact">
-                 <p class="text_bold">Адреса</p>
-                 <p>Maidan Nezalezhnosti, 2, Kyiv, 02000</p>
-                 <p class="text_bold">Контакти</p>
-                 <p>+380123456789</p>
-                 <p>auto.market@gmail.com</p>
-             </div>
-        </section>
-        <footer class="social_media">
-            <a href="#" class="social_media_item">Instagram</a>
-            <a href="#" class="social_media_item">Facebook</a>
-            <a href="#" class="social_media_item">Twitter</a>
-            <a href="#" class="social_media_item">YouTube</a>
-        </footer>
 </body>
 </html>
