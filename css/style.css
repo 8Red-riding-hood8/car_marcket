@@ -17,6 +17,11 @@ body {
     font-family: 'Gruppo-Regular', sans-serif;
 }
 
+p {
+    padding: 2%;
+}
+
+
 .fon_car {
     background-image: url("../images/main_pgoto.jpg");
     background-repeat: no-repeat;
@@ -30,7 +35,7 @@ body {
     border: 1px solid #afafaf;
 }
 
-.left_pannel {
+.fon_car-left_pannel {
     background-color: #ffffff;
     opacity: 0.8;
     width: 20%;
@@ -75,33 +80,44 @@ body {
     margin-left: auto;
 }
 
-.right_pannel_icon {
+.fon_car-right_pannel_icon {
     float: right;
 }
 
+.search_body-main_img {
+    width: 100%;
+}
+
 .right_pannel_icon::after,
-.main_img_line::after,
+.search_body-main_img::after,
 .price_car_text::after,
-.main_img_line::after,
 .right_pannel_icon::after {
     content: "";
     clear: both;
     display: table;
 }
 
-.head_market {
+.fon_car-name {
+    display: flex;
+}
+
+.fon_car-head_market {
     font-size: 100px;
     color: #04AA6D;
 }
 
 .icon {
-    width: 30%;
-    float: right;
+    font-size: 100px;
+    color: #04AA6D;
 }
 
-.head_market,
+.icon_search {
+    width: 8%;
+}
+
+.fon_car-head_market,
 .icon {
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .range-slider {
@@ -119,13 +135,9 @@ body {
     background-color: #1b53c0;
 }
 
-.search_body {
+.search_body,
+.pannel {
     background: #04AA6D;
-}
-
-.name_market {
-    color: #f7d3a5;
-    font-size: 100px;
 }
 
 .panel {
@@ -137,8 +149,48 @@ body {
     margin-bottom: 10px;
 }
 
-.header {
-    padding: 30px;
+.pannel__head {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.pannel__description {
+    display: flex;
+}
+
+.pannel__text {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom:30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.pannel__text_bold {
+    font-weight: bold;
+}
+
+.pannel__description-img {
+    border-radius: 10px;
+    width: 70%;
+    margin-left:30px;
+    margin-top: 20px;
+}
+
+.search_body-header_market {
+    color: #f7d3a5;
+    font-size: 100px;
+}
+
+.search_body-header {
+    padding: 3%;
     color: white;
     display: flex;
     align-items: center;
@@ -152,14 +204,25 @@ body {
 }
 
 .main_car_head {
-    text-align: center;
+    text-decoration: none;
     font-size: 40px;
     font-weight: bold;
     margin-top: 5px;
     margin-bottom: 10px;
+    text-align:center;
+    display:block;
+    color: black;
 }
 
-.item {
+.main_car_head:hover {
+    text-decoration: underline;
+}
+
+.main_car__item-column {
+    display: flex;
+}
+
+.main_car__item {
     border: thick double white;
     width: 50%;
     margin-left: 5px;
@@ -169,6 +232,7 @@ body {
 
 .img_car {
     width: 400px;
+    border-radius: 5px;
     float: inline-start;
     display: block;
     margin-left: 10px;
@@ -178,7 +242,7 @@ body {
     height: 200px;
 }
 
-.pages_auth {
+.search_body-footer {
     text-align: center;
     color: white;
     display: flex;
@@ -187,7 +251,7 @@ body {
     margin-top: 10px;
 }
 
-.pages_auth_item {
+.search_body-footer_item {
     color: white;
     font-size: 30px;
     border: 5px solid;
@@ -198,7 +262,7 @@ body {
     text-decoration: none;
 }
 
-.pages_auth_item:hover {
+.search_body-footer_item:hover {
     color: aqua;
 }
 
@@ -207,15 +271,15 @@ body {
     padding-bottom: 20px;
 }
 
-.box_main {
+.search_panel {
     justify-content: space-around;
     padding-top: 15px;
     padding-bottom: 10px;
 }
-
-.box {
+/*box*/
+.search_panel-box {
     width: 16%;
-    padding: 10px;
+    padding: 1%;
     font-size: 20px;
     border: 1px solid white;
     border-radius: 5px;
@@ -227,7 +291,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.box option {
+.search_panel-box option {
     font-size: 20px;
 }
 
@@ -244,7 +308,7 @@ body {
 .range-price,
 .item_color,
 .info_market,
-.box_main {
+.search_panel {
     display: flex;
 }
 
@@ -286,7 +350,7 @@ body {
     padding-left: 10px;
 }
 
-.site_description_text {
+.search_body-site_description_text {
     font-size: 25px;
     margin-left: 30px;
     margin-top: 20px;
@@ -295,12 +359,12 @@ body {
     text-align: center;
 }
 
-.site_description {
+.search_body-site_description_text_name {
     font-family: "Zen Tokyo Zoo", system-ui;
     font-size: 40px;
 }
 
-.icon_search {
+.search_body-header_icon {
     width: 8%;
 }
 
