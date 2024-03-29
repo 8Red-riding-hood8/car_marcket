@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="search_body">
         <div class="search_body-header">
             <h1 class="search_body-header_market">AutoMarket</h1>
-            <img src="images/icon_search.png" alt="search_body-header_icon" class="icon_search">
+            <img src="../images/icon_search.png" alt="search_body-header_icon" class="icon_search">
         </div>
-        <img src="images/Audi-Report_MST_03.jpg" alt="search_body-main_img" class="main_img_line">
+        <img src="../images/Audi-Report_MST_03.jpg" alt="search_body-main_img" class="main_img_line">
         <p class="search_body-site_description_text">Ласкаво просимо на <span class="search_body-site_description_text_name">AutoMarket</span>
              - ваш персональний портал для покупки автомобілів! Ми створили цей сайт з однією метою - забезпечити вам зручний та надійний інструмент для придбання ідеального авто. Наша команда працює над тим, щоб зробити процес покупки автомобіля легким, захоплюючим та безпечним.</p>
-              <form action="https://fom.in.ua/echo" class="panel" method="POST" class="search">
+              <form action="https://fom.in.ua/echo" class="panel search" method="POST">
                 <div class="search_panel">
                   <select name="type_kuzov" class="search_panel-box">
                       <option value="" disabled selected>Тип кузова</option>
@@ -47,7 +47,7 @@
                       <option value="South_Korea">Південна Корея</option>
                       <option value="France">Франція</option>
                   </select>
-                  <select name="fuel_type"class="search_panel-box">
+                  <select name="fuel_type" class="search_panel-box">
                     <option value="" disabled selected>Тип палива</option>
                     <option value="gasoline">Бензин</option>
                     <option value="diesel_fuel">Дизельне паливо</option>
@@ -89,18 +89,18 @@
                 </div>
             <div class="range">
                 <div class="range-price search_panel_text">
+                    <input type="number" readonly id="min" name="min" value="50000" class="search_panel-box">
                     <label for="min" class="line_indentation text_bold">Мінімальна ціна</label>
-                    <input type="number" readonly name="min" value="50000" class="search_panel-box">
                     <p class="line_indentation">грн</p>
                     <input type="range" class="min" min="0" max="1500000" value="50000" step="10">
                 </div>
                 <div class="range-price search_panel_text">
+                    <input type="number" readonly id="max" name="max" value="2000000" class="search_panel-box">
                     <label for="max" class="line_indentation text_bold">Максимальна ціна</label>
-                    <input type="number" readonly name="max" value="2000000" class="search_panel-box">
                     <p class="line_indentation">грн</p>
                     <input type="range" class="max" min="1500000" max="3000000" value="2000000" step="10">
                 </div>
-                <script src="js/range.js"></script>
+                <script src="../js/range.js"></script>
                 <div class="item_color search_panel_text">
                     <p class="line_indentation text_bold">Колір</p>
                     <input type="color" name="color" value="#ffffff">
@@ -117,7 +117,7 @@
                 <div class="main_car__item">
                     <a href="renault.html" class="main_car_head">Renault</a>
                     <div class="main_car__item-column">
-                        <img src="images/renault.jpg" alt="renault" class="img_car">
+                        <img src="../images/renault.jpg" alt="renault" class="img_car">
                         <div class="car_info_text">
                             <p>Марка авто: Renault</p>
                             <p>Країна виробник: США</p>
@@ -132,12 +132,15 @@
                             </p>
                         </div>
                     </div>
-                    <p class="price_car_text">1200000 грн</p>
+                    <div class="price_car">
+                        <p class="price_car_text">1200000 грн</p>
+                        <a class="text_bold pannel_return" href="renault.html">Переглянути</a>
+                    </div>
                 </div>
                 <div class="main_car__item">
                     <a href="mercedes.html" class="main_car_head">Mercedes</a>
                     <div class="main_car__item-column">
-                        <img src="images/mercedes.jpeg" alt="mercedes" class="img_car">
+                        <img src="../images/mercedes.jpeg" alt="mercedes" class="img_car">
                         <div class="car_info_text">
                             <p>Марка авто: Mercedes</p>
                             <p>Країна виробник: Німеччина</p>
@@ -152,14 +155,17 @@
                             </p>
                         </div>
                     </div>
-                    <p class="price_car_text">1200000 грн</p>
+                    <div class="price_car">
+                        <p class="price_car_text">1200000 грн</p>
+                        <a class="text_bold pannel_return" href="mercedes.html">Переглянути</a>
+                    </div>
                 </div>
             </div>
             <div class="main_car">
                 <div class="main_car__item">
                     <a href="bugatti_veyron.html" class="main_car_head">Bugatti Veyron</a>
                     <div class="main_car__item-column">
-                        <img src="images/limousine.jpg" alt="limousine" class="img_car">
+                        <img src="../images/limousine.jpg" alt="limousine" class="img_car">
                         <div class="car_info_text">
                             <p>Марка авто: Bugatti Veyron</p>
                             <p>Країна виробник: Франція</p>
@@ -170,16 +176,19 @@
                             <p>Стан: У кредит</p>
                             <p>Комфорт: Люк</p>
                             <p>Колір:
-                                <input type="color" value="#fffff">
+                                <input type="color" value="#ffffff">
                             </p>
                         </div>
                     </div>
-                    <p class="price_car_text">1200000 грн</p>
+                    <div class="price_car">
+                        <p class="price_car_text">1200000 грн</p>
+                        <a class="text_bold pannel_return" href="bugatti_veyron.html">Переглянути</a>
+                    </div>
                 </div>
                 <div class="main_car__item">
                     <a href="chevrolet.html" class="main_car_head">Chevrolet</a>
                     <div class="main_car__item-column">
-                        <img src="images/pickup.jpeg" alt="pickup" class="img_car">
+                        <img src="../images/pickup.jpeg" alt="pickup" class="img_car">
                         <div class="car_info_text">
                             <p>Марка авто: Chevrolet</p>
                             <p>Країна виробник: США</p>
@@ -190,18 +199,21 @@
                             <p>Стан: Нерозмитнена</p>
                             <p>Комфорт: Система безпеки</p>
                             <p>Колір:
-                                <input type="color" value="#fffff">
+                                <input type="color" value="#ffffff">
                             </p>
                         </div>
                     </div>
-                    <p class="price_car_text">1200000 грн</p>
+                    <div class="price_car">
+                        <p class="price_car_text">1200000 грн</p>
+                        <a class="text_bold pannel_return" href="chevrolet.html">Переглянути</a>
+                    </div>
                 </div>
             </div>
             <div class="main_car">
                 <div class="main_car__item">
                     <a href="volkswagen.html" class="main_car_head">Volkswagen</a>
                     <div class="main_car__item-column">
-                        <img src="images/van.jpg" alt="van" class="img_car">
+                        <img src="../images/van.jpg" alt="van" class="img_car">
                         <div class="car_info_text">
                             <p>Марка авто: Volkswagen</p>
                             <p>Країна виробник: Німеччина</p>
@@ -216,13 +228,15 @@
                             </p>
                         </div>
                     </div>
-                    <p class="price_car_text">1200000 грн</p>
-                    <div class="clear"></div>
+                    <div class="price_car">
+                        <p class="price_car_text">1200000 грн</p>
+                        <a class="text_bold pannel_return" href="volkswagen.html">Переглянути</a>
+                    </div>
                 </div>
                 <div class="main_car__item">
                     <a href="audi.html" class="main_car_head">Audi</a>
                     <div class="main_car__item-column">
-                        <img src="images/audi.jpg" alt="audi" class="img_car">
+                        <img src="../images/audi.jpg" alt="audi" class="img_car">
                         <div class="car_info_text">
                             <p>Марка авто: Audi</p>
                             <p>Країна виробник: Німеччина</p>
@@ -233,12 +247,14 @@
                             <p>Стан: Перевірений сервісом</p>
                             <p>Комфорт: Система навігації</p>
                             <p>Колір:
-                                <input type="color" value="#fffff">
+                                <input type="color" value="#ffffff">
                             </p>
                         </div>
                     </div>
-                    <p class="price_car_text">1200000 грн</p>
-                    <div class="clear"></div>
+                    <div class="price_car">
+                        <p class="price_car_text">1200000 грн</p>
+                        <a class="text_bold pannel_return" href="audi.html">Переглянути</a>
+                    </div>
                 </div>
             </div>
             <section class="info_market">

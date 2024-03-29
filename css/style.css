@@ -84,18 +84,11 @@ p {
     float: right;
 }
 
-.search_body-main_img {
+.search_body-main_img,
+.main_img_line {
     width: 100%;
 }
 
-.right_pannel_icon::after,
-.search_body-main_img::after,
-.price_car_text::after,
-.right_pannel_icon::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
 .fon_car-name {
     display: flex;
@@ -341,8 +334,8 @@ p {
 .price_car_text {
     font-size: 30px;
     font-weight: bold;
-    float: right;
     margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .car_info_text {
@@ -403,4 +396,33 @@ ol {
 .menu__item {
     font-size: 20px;
     width: 100%;
+}
+
+.right_pannel_icon:after,
+.search_body-main_img:after,
+.right_pannel_icon:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.price_car {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    height: 50px;
+}
+
+.pannel_return {
+    width: 20%;
+    background-color: white;
+    color: #04AA6D;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-bottom: 5px;
 }
